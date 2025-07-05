@@ -50,9 +50,12 @@ const Hero = () => {
           <div className="relative">
             <div className="relative w-full h-96 lg:h-[500px] bg-gradient-to-br from-blue-100 to-blue-200 rounded-3xl overflow-hidden transform hover:scale-105 transition-transform duration-500">
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-64 h-64 bg-white rounded-2xl shadow-2xl transform -rotate-6 hover:rotate-0 transition-transform duration-500 flex items-center justify-center">
-                  <div className="text-6xl">📱</div>
-                </div>
+                <img className="w-64 h-64 bg-white rounded-2xl shadow-2xl transform -rotate-6 hover:rotate-0 transition-transform duration-500 flex items-center justify-center"
+                src="/images/HeroDisplay.jpg"
+                alt="Digital Devices hub"
+                
+                />
+                 
               </div>
               
               {/* Floating Elements */}
