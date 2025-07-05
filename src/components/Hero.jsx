@@ -4,7 +4,7 @@ import React from 'react';
 const Hero = () => {
   return (
     <section id="home" className="pt-16 bg-gradient-to-br from-white to-blue-50 min-h-screen flex items-center">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-8 animate-fade-in">
