@@ -7,6 +7,7 @@ import devices from "../data/devices.json";
 
 const OurDevices = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [visibleCount, setVisibleCount] = useState(6);
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart.items);
 
@@ -29,6 +30,23 @@ const OurDevices = () => {
     return item ? item.quantity : 0;
   };
 
+  const handleSeeMore = () => {
+    setVisibleCount(prev => prev + 6);
+  };
+
+  const handleSeeLess = () => {
+    setVisibleCount(6);
+  };
+
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+    setVisibleCount(6); // Reset to 6 when category changes
+  };
+
+  const displayedDevices = filteredDevices.slice(0, visibleCount);
+  const hasMore = visibleCount < filteredDevices.length;
+  const showSeeLess = visibleCount > 6;
+
   return (
     <section id="devices" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,7 +65,7 @@ const OurDevices = () => {
           {categories.map((category) => (
             <button
               key={category}
-              onClick={() => setSelectedCategory(category)}
+              onClick={() => handleCategoryChange(category)}
               className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
                 selectedCategory === category
                   ? "bg-blue-600 text-white shadow-lg"
@@ -61,7 +79,7 @@ const OurDevices = () => {
 
         {/* Devices Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredDevices.map((device) => (
+          {displayedDevices.map((device) => (
             <div
               key={device.id}
               className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
@@ -142,11 +160,26 @@ const OurDevices = () => {
           ))}
         </div>
 
-        {/* Load More */}
+        {/* Load More / See Less */}
         <div className="text-center mt-16">
-          <button className="bg-gray-100 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
-            Load More Devices
-          </button>
+          <div className="flex gap-4 justify-center">
+            {hasMore && (
+              <button 
+                onClick={handleSeeMore}
+                className="bg-gray-100 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-200 transition-colors"
+              >
+                See More Devices
+              </button>
+            )}
+            {showSeeLess && (
+              <button 
+                onClick={handleSeeLess}
+                className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              >
+                See Less
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </section>

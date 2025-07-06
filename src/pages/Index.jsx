@@ -7,9 +7,12 @@ import WhyDigitalCore from '../components/WhyDigitalCore';
 import Footer from '../components/Footer';
 
 
+
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
+      
       <Navigation />
       <Hero />
       <OurDevices />
@@ -17,6 +20,7 @@ const Index = () => {
       <LearnElectronics />
 			<WhyDigitalCore />
       <Footer />
+    
     </div>
   );
 };
