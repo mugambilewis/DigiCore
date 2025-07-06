@@ -43,16 +43,17 @@ const Navigation = () => {
             </div>
 
             {/* Cart Icon - always visible */}
-            <div className="relative">
-              <Link to="/cart" className="p-2 text-gray-600 hover:text-blue-600 transition relative">
-                <ShoppingCart className="w-6 h-6" />
-                {totalItems > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-red-600 text-white text-[10px] font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-md z-10">
-                    {totalItems}
-                  </span>
-                )}
-              </Link>
-            </div>
+            <Link to="/cart" className="p-2 text-gray-600 hover:text-blue-600 transition">
+  <div className="relative w-6 h-6">
+    <ShoppingCart className="w-6 h-6" />
+    {totalItems > 0 && (
+      <span className="absolute -top-2 -right-2 bg-red-600 text-white text-[10px] font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-md z-10">
+        {totalItems}
+      </span>
+    )}
+  </div>
+</Link>
+
 
             {/* User icon (desktop only) */}
             <button className="hidden md:block p-2 text-gray-600 hover:text-blue-600 transition">

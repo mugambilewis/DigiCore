@@ -22,8 +22,9 @@ const device = devices.find((d) => d.id.toString() === id);
 
   return (
     <>
-      <Navigation />
+      
     <section className="max-w-4xl mx-auto px-4 py-20">
+      <Navigation />
       <div className="flex flex-col md:flex-row gap-10">
         {/* Device Image */}
         <div className="flex-1 text-center">
@@ -48,7 +49,7 @@ const device = devices.find((d) => d.id.toString() === id);
           </ul>
 
           <Link
-            to="/devices"
+            to="/"
             className="inline-block mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
           >
             Back to Devices
