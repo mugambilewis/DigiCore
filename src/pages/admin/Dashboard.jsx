@@ -1,8 +1,5 @@
 import React from 'react';
 import { BarChart3, Package, Users, DollarSign, Plus, Search, Filter, Edit, Trash2, Menu } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const Dashboard = () => {
   const stats = [
