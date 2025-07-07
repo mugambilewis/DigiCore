@@ -9,11 +9,12 @@ import NotFound from "./pages/NotFound";
 import DeviceDetail from "./pages/DeviceDetail";
 import Cart from "./pages/Cart";
 
-{/* 
+ 
   import Login from "./pages/Login";
   import Register from "./pages/Register";
-  import Checkout from "./pages/Checkout";
   import Dashboard from "./pages/admin/Dashboard";
+  {/*
+  import Checkout from "./pages/Checkout";
 */}
 
 import Layout from "./components/Layout"; // 👈 Wrapper with Navbar, Footer, etc.
@@ -33,13 +34,12 @@ function App() {
               <Route path="/device/:id" element={<DeviceDetail />} />
               <Route path="/cart" element={<Cart />} />
              
-              {/* 
+              
                <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
-                <Route path="/checkout" element={<PrivateRoute><Checkout /></PrivateRoute>} />
                 <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+              {/* <Route path="/checkout" element={<PrivateRoute><Checkout /></PrivateRoute>} /> */}
               
-              */}
             </Route>
 
             {/* 404 PAGE */}

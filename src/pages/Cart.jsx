@@ -82,6 +82,14 @@ const Cart = () => {
                 </button>
               </div>
             </div>
+            <div className="mt-10 text-center">
+              <Link
+              to="/"
+              className="mt-4 inline-block text-blue-600 font-semibold hover:underline"
+            >
+              ← Continue shopping
+            </Link>
+            </div>
           </>
         )}
       </section>

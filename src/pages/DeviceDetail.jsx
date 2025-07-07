@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import devices from "../data/devices.json";
+import { useSelector } from "react-redux";
 
 
 
@@ -8,7 +9,11 @@ import devices from "../data/devices.json";
 const DeviceDetails = () => {
   const { id } = useParams();
   const device = devices.find((d) => d.id.toString() === id);
-  
+ 
+  const cartItems = useSelector((state) => state.cart.items);
+  // Find the item in the cart that matches the device ID
+  const item = cartItems.find((item) => item.id.toString() === id);
+
 
   if (!device) {
     return (
@@ -25,14 +30,20 @@ const DeviceDetails = () => {
   return (
     <>
       
-    <section className="max-w-4xl mx-auto px-4 py-20">
+    <section className="max-w-4xl mx-auto px-4 py-20 flex flex-col">
+      <div className="flex-1 text-center">
+        <h1 className="text-4xl font-bold text-blue-600 mb-4">Device Details</h1>
+        
+        </div>
+      <div className="flex-1 text-center">
+          <h2 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+  You have {item.quantity} {item.name}{item.quantity > 1 ? 's' : ''} in your cart
+</h2>
+
+      </div>
      
       <div className="flex flex-col md:flex-row gap-10">
-        <div className="flex-1 text-center">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">
-           
-          </h2>
-        </div>
+        
         {/* Device Image */}
         <div className="flex-1 text-center">
           <img src={device.image} alt={device.name} className="w-full max-w-xs mx-auto object-contain" />
