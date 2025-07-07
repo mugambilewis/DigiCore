@@ -1,12 +1,14 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import devices from "../data/devices.json";
-import Navigation from "../components/Navigation";
+
+
+
 
 const DeviceDetails = () => {
   const { id } = useParams();
-const device = devices.find((d) => d.id.toString() === id);
-
+  const device = devices.find((d) => d.id.toString() === id);
+  
 
   if (!device) {
     return (
@@ -24,8 +26,13 @@ const device = devices.find((d) => d.id.toString() === id);
     <>
       
     <section className="max-w-4xl mx-auto px-4 py-20">
-      <Navigation />
+     
       <div className="flex flex-col md:flex-row gap-10">
+        <div className="flex-1 text-center">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">
+           
+          </h2>
+        </div>
         {/* Device Image */}
         <div className="flex-1 text-center">
           <img src={device.image} alt={device.name} className="w-full max-w-xs mx-auto object-contain" />
