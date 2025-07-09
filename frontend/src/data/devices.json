@@ -1,0 +1,545 @@
+
+[
+    {
+      "id": 1,
+      "name": "iPhone 15 Pro Max",
+      "category": "Smartphones",
+      "price": 1199,
+      "rating": 4.8,
+      "image": "/images/iphone15promax.png",
+      "features": ["A17 Pro Chip", "48MP Camera", "Titanium Design"],
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "name": "MacBook Pro M3",
+      "category": "Laptops",
+      "price": 1999,
+      "rating": 4.9,
+      "image": "/images/MacBook-Pro-M3.png",
+      "features": ["M3 Chip", "18-hour Battery", "Liquid Retina XDR"],
+      "inStock": true
+    },
+    {
+      "id": 3,
+      "name": "iPad Pro 12.9\"",
+      "category": "Tablets",
+      "price": 1099,
+      "rating": 4.7,
+      "image": "/images/IMG_1008.png",
+      "features": ["M2 Chip", "Apple Pencil Support", "5G Capable"],
+      "inStock": false
+    },
+    {
+      "id": 4,
+      "name": "Apple Watch Series 10",
+      "category": "Smartwatches",
+      "price": 799,
+      "rating": 4.6,
+      "image": "/images/Apple-Watch-Series-10.png",
+      "features": ["Titanium Case", "GPS + Cellular", "100m Water Resistant"],
+      "inStock": true
+    },
+    {
+      "id": 5,
+      "name": "Lenovo ThinkBook Plus Gen 5 Hybrid",
+      "category": "Components",
+      "price": 27,
+      "rating": 4.8,
+      "image": "/images/thinkbook-plus-gen-5-hybrid-4.png",
+      "features": ["WiFi Built-in", "LED Matrix", "USB-C"],
+      "inStock": true
+    },
+    {
+      "id": 6,
+      "name": "Sonos Era 500 speaker",
+      "category": "Components",
+      "price": 80,
+      "rating": 4.9,
+      "image": "/images/oled-c4-42-a-thumbnail-02.png",
+      "features": ["ARM Cortex-A76", "8GB RAM", "Dual 4K HDMI"],
+      "inStock": true
+    },
+    
+    {
+      "id": 7,
+      "name": "iPhone 15 Pro Max",
+      "category": "Smartphones",
+      "price": 1199,
+      "rating": 4.8,
+      "image": "/images/iphone15promax.png",
+      "features": ["A17 Pro Chip", "48MP Camera", "Titanium Design"],
+      "inStock": true
+    },
+    {
+      "id": 8,
+      "name": "Samsung Galaxy S25 Ultra",
+      "category": "Smartphones",
+      "price": 1999,
+      "rating": 4.9,
+      "image": "/images/Samsung-Galaxy-S25-Ultra-a.png",
+      "features": ["M3 Chip", "18-hour Battery", "Liquid Retina XDR"],
+      "inStock": true
+    },
+    {
+      "id": 9,
+      "name": "PlayStation 5 Pro",
+      "category": "Components",
+      "price": 1099,
+      "rating": 4.7,
+      "image": "/images/images (1).png",
+      "features": ["M2 Chip", "Apple Pencil Support", "5G Capable"],
+      "inStock": false
+    },
+    {
+      "id": 10,
+      "name": "Huawei MateBook Fold",
+      "category": "Smartwatches",
+      "price": 799,
+      "rating": 4.6,
+      "image": "⌚",
+      "features": ["Titanium Case", "GPS + Cellular", "100m Water Resistant"],
+      "inStock": true
+    },
+    {
+      "id": 11,
+      "name": "LG C4 OLED TV",
+      "category": "Components",
+      "price": 27,
+      "rating": 4.8,
+      "image": "/images/oled-c4-42-a-thumbnail-02.png",
+      "features": ["WiFi Built-in", "LED Matrix", "USB-C"],
+      "inStock": true
+    },
+    {
+      "id": 12,
+      "name": "ASUS ROG Zephyrus G16",
+      "category": "Components",
+      "price": 80,
+      "rating": 4.9,
+      "image": "🍓",
+      "features": ["ARM Cortex-A76", "8GB RAM", "Dual 4K HDMI"],
+      "inStock": true
+    },
+    {
+      "id": 13,
+      "name": "Google Pixel Fold",
+      "category": "Smartphones",
+      "price": 1799,
+      "rating": 4.5,
+      "image": "/images/Google-Pixel-9a-a.png",
+      "features": ["Foldable Display", "Tensor G2 Chip", "5G Capable"],
+      "inStock": true
+    },
+    {
+      "id": 14,
+      "name": "Dell XPS 13 Plus",
+      "category": "Laptops",
+      "price": 1499,
+      "rating": 4.7,
+      "image": "/images/dell-xps-13-plus.png",
+      "features": ["13.4\" InfinityEdge Display", "11th Gen Intel Core", "Ultra-thin Design"],
+      "inStock": true
+    },
+    {
+      "id": 15,
+      "name": "Samsung Galaxy Tab S9 Ultra",
+      "category": "Tablets",
+      "price": 1099,
+      "rating": 4.8,
+      "image": "/images/samsung-galaxy-tab-s9-ultra.png",
+      "features": ["14.6\" AMOLED Display", "Snapdragon 8 Gen 2", "S Pen Included"],
+      "inStock": false
+    },
+    {
+      "id": 16,
+      "name": "Garmin Fenix 7X",
+      "category": "Smartwatches",
+      "price": 899,
+      "rating": 4.9,
+      "image": "/images/garmin-fenix-7x.png",
+      "features": ["Solar Charging", "Multi-GNSS Support", "Health Monitoring"],
+      "inStock": true
+    },
+    {
+      "id": 17,
+      "name": "Razer Blade 15 Advanced",
+      "category": "Components",
+      "price": 2499,
+      "rating": 4.8,
+      "image": "/images/razer-blade-15-advanced.png",
+      "features": ["GeForce RTX 3080 Ti", "OLED Touch Display", "Per-Key RGB Chroma"],
+      "inStock": true
+    },
+    {
+      "id": 18,
+      "name": "Sony WH-1000XM5 Headphones",
+      "category": "Components",
+      "price": 349,
+      "rating": 4.9,
+      "image": "/images/sony-wh-1000xm5.png",
+      "features": ["Industry-Leading Noise Cancellation", "30-hour Battery Life", "Touch Sensor Controls"],
+      "inStock": true
+    },
+    {
+      "id": 19,
+      "name": "Apple AirPods Pro 2",
+      "category": "Components",
+      "price": 249,
+      "rating": 4.8,
+      "image": "/images/apple-airpods-pro-2.png",
+      "features": ["Active Noise Cancellation", "Transparency Mode", "Spatial Audio"],
+      "inStock": true
+    },
+    {
+      "id": 20,
+      "name": "Microsoft Surface Laptop Studio",
+      "category": "Laptops",
+      "price": 1799,
+      "rating": 4.7,
+      "image": "/images/microsoft-surface-laptop-studio.png",
+      "features": ["11th Gen Intel Core i7", "NVIDIA GeForce RTX 3050 Ti", "Touchscreen"],
+      "inStock": true
+    },
+    {
+      "id": 21,
+      "name": "Oculus Quest 3",
+      "category": "Components",
+      "price": 499,
+      "rating": 4.6,
+      "image": "/images/oculus-quest-3.png",
+      "features": ["Meta Reality Technology", "High-Resolution Display", "Hand Tracking"],
+      "inStock": true
+    },
+    {
+      "id": 22,
+      "name": "Apple Mac Mini M2 Pro",
+      "category": "Laptops",
+      "price": 1299,
+      "rating": 4.8,
+      "image": "/images/apple-mac-mini-m2-pro.png",
+      "features": ["M2 Pro Chip", "Compact Design", "Versatile Connectivity"],
+      "inStock": true
+    }, 
+    {
+      "id": 23,
+      "name": "HP Spectre x360 14",
+      "category": "Laptops",
+      "price": 1599,
+      "rating": 4.7,
+      "image": "/images/hp-spectre-x360-14.png",
+      "features": ["13.5\" OLED Display", "11th Gen Intel Core i7", "Convertible Design"],
+      "inStock": true
+    },
+    {
+      "id": 24,
+      "name": "Lenovo Yoga Tab 13",
+      "category": "Tablets",
+      "price": 799,
+      "rating": 4.8,
+      "image": "/images/lenovo-yoga-tab-13.png",
+      "features": ["13\" 2K Display", "Snapdragon 870", "Integrated Kickstand"],
+      "inStock": true
+    },
+    {
+      "id": 25,
+      "name": "Fitbit Charge 5",
+      "category": "Smartwatches",
+      "price": 149,
+      "rating": 4.6,
+      "image": "/images/fitbit-charge-5.png",
+      "features": ["Daily Readiness Score", "Built-in GPS", "Stress Management Tools"],
+      "inStock": true
+    },
+    {
+      "id": 26,
+      "name": "Logitech MX Master 3S Mouse",
+      "category": "Components",
+      "price": 99,
+      "rating": 4.8,
+      "image": "/images/logitech-mx-master-3s.png",
+      "features": ["Ergonomic Design", "MagSpeed Scroll Wheel", "Multi-Device Support"],
+      "inStock": true
+    },
+    {
+      "id": 27,
+      "name": "Samsung Galaxy Buds Pro",
+      "category": "Components",
+      "price": 199,
+      "rating": 4.7,
+      "image": "/images/samsung-galaxy-buds-pro.png",
+      "features": ["Intelligent Active Noise Cancellation", "IPX7 Water Resistance", "360 Audio"],
+      "inStock": true
+    },
+    {
+      "id": 28,
+      "name": "Dell Alienware Aurora R14",
+      "category": "Components",
+      "price": 2499,
+      "rating": 4.9,
+      "image": "/images/dell-alienware-aurora-r14.png",
+      "features": ["AMD Ryzen 9", "NVIDIA GeForce RTX 3080", "Customizable RGB Lighting"],
+      "inStock": true
+    },
+    {
+      "id": 29,
+      "name": "Apple iMac 24\" M1",
+      "category": "Laptops",
+      "price": 1299,
+      "rating": 4.8,
+      "image": "/images/apple-imac-24-m1.png",
+      "features": ["M1 Chip", "Retina 4.5K Display", "All-in-One Design"],
+      "inStock": true
+    },
+    {
+      "id": 30,
+      "name": "Microsoft Surface Pro 8",
+      "category": "Tablets",
+      "price": 1099,
+      "rating": 4.7,
+      "image": "/images/microsoft-surface-pro-8.png",
+      "features": ["11th Gen Intel Core", "13\" PixelSense Display", "Detachable Keyboard"],
+      "inStock": true
+    },
+    {
+      "id": 31,
+      "name": "Huawei Watch GT 3 Pro",
+      "category": "Smartwatches",
+      "price": 299,
+      "rating": 4.6,
+      "image": "/images/huawei-watch-gt-3-pro.png",
+      "features": ["1.43\" AMOLED Display", "Health Monitoring", "Long Battery Life"],
+      "inStock": true
+    },
+    {
+      "id": 32,
+      "name": "Anker Soundcore Liberty 3 Pro",
+      "category": "Components",
+      "price": 169,
+      "rating": 4.8,
+      "image": "/images/anker-soundcore-liberty-3-pro.png",
+      "features": ["Hi-Res Audio", "Adaptive Noise Cancellation", "IPX4 Water Resistance"],
+      "inStock": true
+    },
+    {
+      "id": 33,
+      "name": "Google Nest Hub Max",
+      "category": "Components",
+      "price": 229,
+      "rating": 4.7,
+      "image": "/images/google-nest-hub-max.png",
+      "features": ["10\" HD Display", "Built-in Google Assistant", "Smart Home Control"],
+      "inStock": true
+    },
+    {
+      "id": 34,
+      "name": "ASUS ZenBook Duo 14",
+      "category": "Laptops",
+      "price": 1499,
+      "rating": 4.8,
+      "image": "/images/asus-zenbook-duo-14.png",
+      "features": ["Dual Screen", "11th Gen Intel Core i7", "ErgoLift Hinge"],
+      "inStock": true
+    },
+    {
+      "id": 35,
+      "name": "Apple Magic Keyboard with Touch ID",
+      "category": "Components",
+      "price": 199,
+      "rating": 4.7,
+      "image": "/images/apple-magic-keyboard-touch-id.png",
+      "features": ["Touch ID", "Bluetooth Connectivity", "Rechargeable Battery"],
+      "inStock": true
+    },
+    {
+      "id": 36,
+      "name": "Samsung Galaxy Z Flip 5",
+      "category": "Smartphones",
+      "price": 999,
+      "rating": 4.6,
+      "image": "/images/samsung-galaxy-z-flip-5.png",
+      "features": ["Foldable Display", "Snapdragon 8 Gen 2", "Compact Design"],
+      "inStock": true
+    },
+    {
+      "id": 37,
+      "name": "Logitech G Pro X Superlight Mouse",
+      "category": "Components",
+      "price": 149,
+      "rating": 4.8,
+      "image": "/images/logitech-g-pro-x-superlight.png",
+      "features": ["Ultra-Lightweight", "Hero Sensor", "Wireless Connectivity"],
+      "inStock": true
+    },
+    {
+      "id": 38,
+      "name": "Apple HomePod Mini",
+      "category": "Components",
+      "price": 99,
+      "rating": 4.7,
+      "image": "/images/apple-homepod-mini.png",
+      "features": ["Compact Design", "High-Quality Audio", "Siri Integration"],
+      "inStock": true
+    },
+    {
+      "id": 39,
+      "name": "Dell XPS 17 9700",
+      "category": "Laptops",
+      "price": 1999,
+      "rating": 4.9,
+      "image": "/images/dell-xps-17-9700.png",
+      "features": ["17\" InfinityEdge Display", "11th Gen Intel Core i9", "NVIDIA GeForce RTX 3060"],
+      "inStock": true
+    },
+    {
+      "id": 40,
+      "name": "Sony Xperia 1 IV",
+      "category": "Smartphones",
+      "price": 1299,
+      "rating": 4.7,
+      "image": "/images/sony-xperia-1-iv.png",
+      "features": ["4K HDR OLED Display", "Triple Camera System", "Snapdragon 8 Gen 1"],
+      "inStock": true
+    },
+    {
+      "id": 41,
+      "name": "HP Omen 16",
+      "category": "Components",
+      "price": 1499,
+      "rating": 4.8,
+      "image": "/images/hp-omen-16.png",
+      "features": ["AMD Ryzen 7", "NVIDIA GeForce RTX 3060", "144Hz Display"],
+      "inStock": true
+    },
+    {
+      "id": 42,
+      "name": "Apple iPad Air (5th Gen)",
+      "category": "Tablets",
+      "price": 599,
+      "rating": 4.8,
+      "image": "/images/apple-ipad-air-5th-gen.png",
+      "features": ["M1 Chip", "10.9\" Liquid Retina Display", "Touch ID"],
+      "inStock": true
+    },
+    {
+      "id": 43,
+      "name": "Microsoft Xbox Series X",
+      "category": "Components",
+      "price": 499,
+      "rating": 4.9,
+      "image": "/images/microsoft-xbox-series-x.png",
+      "features": ["4K Gaming", "1TB SSD", "Ray Tracing"],
+      "inStock": true
+    },
+    {
+      "id": 44,
+      "name": "Bose QuietComfort 45 Headphones",
+      "category": "Components",
+      "price": 329,
+      "rating": 4.8,
+      "image": "/images/bose-quietcomfort-45.png",
+      "features": ["Acoustic Noise Cancelling", "30-hour Battery Life", "Comfortable Fit"],
+      "inStock": true
+    },
+    {
+      "id": 45,
+      "name": "Razer Kishi Mobile Game Controller",
+      "category": "Components",
+      "price": 99,
+      "rating": 4.7,
+      "image": "/images/razer-kishi-mobile-controller.png",
+      "features": ["Universal Compatibility", "Low Latency", "Ergonomic Design"],
+      "inStock": true
+    },
+    {
+      "id": 46,
+      "name": "Apple AirTag",
+      "category": "Components",
+      "price": 29,
+      "rating": 4.6,
+      "image": "/images/apple-airtag.png",
+      "features": ["Precision Finding", "Water and Dust Resistant", "Replaceable Battery"],
+      "inStock": true
+    },
+    {
+      "id": 47,
+      "name": "Samsung Galaxy Watch 5 Pro",
+      "category": "Smartwatches",
+      "price": 449,
+      "rating": 4.7,
+      "image": "/images/samsung-galaxy-watch-5-pro.png",
+      "features": ["Durable Design", "Advanced Health Tracking", "Long Battery Life"],
+      "inStock": true
+    },
+    {
+      "id": 48,
+      "name": "Apple Pencil (2nd Gen)",
+      "category": "Components",
+      "price": 129,
+      "rating": 4.8,
+      "image": "/images/apple-pencil-2nd-gen.png",
+      "features": ["Magnetic Attachment", "Double-Tap Functionality", "Low Latency"],
+      "inStock": true
+    },
+    {
+      "id": 49,
+      "name": "Logitech StreamCam",
+      "category": "Components",
+      "price": 169,
+      "rating": 4.7,
+      "image": "/images/logitech-streamcam.png",
+      "features": ["1080p at 60fps", "Smart Auto-Focus", "USB-C Connectivity"],
+      "inStock": true
+    },
+    {
+      "id": 50,
+      "name": "Anker PowerCore 26800mAh Portable Charger",
+      "category": "Components",
+      "price": 59,
+      "rating": 4.8,
+      "image": "/images/anker-powercore-26800.png",
+      "features": ["Fast Charging", "Triple USB Ports", "Compact Design"],
+      "inStock": true
+    },
+    {
+      "id": 51,
+      "name": "Apple Magic Mouse",
+      "category": "Components",
+      "price": 79,
+      "rating": 4.7,
+      "image": "/images/apple-magic-mouse.png",
+      "features": ["Multi-Touch Surface", "Bluetooth Connectivity", "Rechargeable Battery"],
+      "inStock": true
+    },
+    {
+      "id": 52,
+      "name": "Samsung Galaxy S24 Ultra",
+      "category": "Smartphones",
+      "price": 1199,
+      "rating": 4.8,
+      "image": "/images/samsung-galaxy-s24-ultra.png",
+      "features": ["Snapdragon 8 Gen 3", "200MP Camera", "S Pen Included"],
+      "inStock": true
+    },
+    {
+      "id": 53,
+      "name": "Dell Inspiron 15 3000",
+      "category": "Laptops",
+      "price": 599,
+      "rating": 4.5,
+      "image": "/images/dell-inspiron-15-3000.png",
+      "features": ["15.6\" Display", "11th Gen Intel Core i5", "Affordable Performance"],
+      "inStock": true
+    },
+    {
+      "id": 54,
+      "name": "Apple Watch Series 9",
+      "category": "Smartwatches",
+      "price": 399,
+      "rating": 4.8,
+      "image": "/images/apple-watch-series-9.png",
+      "features": ["Always-On Display", "Health and Fitness Tracking", "Siri Integration"],
+      "inStock": true
+    }
+  ]
+    
