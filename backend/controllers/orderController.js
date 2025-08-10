@@ -1,10 +1,15 @@
-exports.createOrder = async (req, res) => {
+import Order from '../models/Order.js';
+
+export const createOrder = async (req, res) => {
   try {
     const { items, shippingData, subtotal, shipping, tax, total } = req.body;
 
-    // Save to database (if using one), here we'll mock
-    console.log("Order received:", {
-      user: req.user, // from token
+    if (!items || items.length === 0) {
+      return res.status(400).json({ message: 'No items in the order' });
+    }
+
+    const order = await Order.create({
+      user: req.user._id,
       items,
       shippingData,
       subtotal,
@@ -13,8 +18,12 @@ exports.createOrder = async (req, res) => {
       total,
     });
 
-    res.status(201).json({ message: "Order placed successfully" });
+    res.status(201).json({
+      message: 'Order placed successfully',
+      orderId: order._id,
+    });
   } catch (err) {
-    res.status(500).json({ message: "Failed to place order" });
+    console.error('Order error:', err);
+    res.status(500).json({ message: 'Failed to place order' });
   }
 };

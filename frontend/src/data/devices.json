@@ -97,7 +97,7 @@
       "category": "Smartwatches",
       "price": 799,
       "rating": 4.6,
-      "image": "⌚",
+      "image": "/images/Huawei MateBook Fold.png",
       "features": ["Titanium Case", "GPS + Cellular", "100m Water Resistant"],
       "inStock": true
     },
@@ -117,7 +117,7 @@
       "category": "Components",
       "price": 80,
       "rating": 4.9,
-      "image": "🍓",
+      "image": "/images/ASUS ROG Zephyrus G16.png",
       "features": ["ARM Cortex-A76", "8GB RAM", "Dual 4K HDMI"],
       "inStock": true
     },
@@ -137,7 +137,7 @@
       "category": "Laptops",
       "price": 1499,
       "rating": 4.7,
-      "image": "/images/dell-xps-13-plus.png",
+      "image": "/images/Dell XPS 13 Plus.png",
       "features": ["13.4\" InfinityEdge Display", "11th Gen Intel Core", "Ultra-thin Design"],
       "inStock": true
     },

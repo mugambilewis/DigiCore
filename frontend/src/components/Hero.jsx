@@ -4,7 +4,7 @@ import React from 'react';
 const Hero = () => {
   return (
     <section id="home" className="pt-16 bg-gradient-to-br from-white to-blue-50 min-h-screen flex items-center">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-8 animate-fade-in">
@@ -20,13 +20,32 @@ const Hero = () => {
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                Shop Devices
-              </button>
-              <button className="border border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-300">
-                Start Learning
-              </button>
+            <div className="flex flex-raw   md:flex-row gap-4">
+              {['devices'].map((section) => (
+              <a
+                key={section}
+                href={`#${section}`}
+                className=" hover:text-blue-600 capitalize bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:border-blue-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              >
+                Shop {section}
+              
+              
+             </a>
+            ))}
+          
+              {['learn'].map((section) => (
+              <a
+                key={section}
+                href={`#${section}`}
+                className="text-white hover:text-blue-600  capitalize bg-blue-600  px-8 py-4 rounded-lg font-semibold hover:bg-blue-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              >
+                {section} Electronics
+              
+              
+             </a>
+            ))} 
+                
+             
             </div>
 
             {/* Stats */}

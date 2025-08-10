@@ -9,7 +9,11 @@ import NotFound from "./pages/NotFound";
 import DeviceDetail from "./pages/DeviceDetail";
 import Cart from "./pages/Cart";
 
- 
+ import UserProfile from "@/pages/UserProfile";
+
+// inside your <Routes>
+<Route path="/profile" element={<UserProfile />} />
+
   import Login from "./pages/Login";
   import Register from "./pages/Register";
   import Dashboard from "./pages/admin/Dashboard";
@@ -34,6 +38,7 @@ function App() {
               <Route path="/device/:id" element={<DeviceDetail />} />
               <Route path="/cart" element={<Cart />} />
              
+              <Route path="/profile" element={<UserProfile />} />
               
                <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />

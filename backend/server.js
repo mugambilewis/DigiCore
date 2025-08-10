@@ -23,7 +23,10 @@ app.use(cors({
 const authRoutes = require('./routes/auth');
 app.use('/api/auth', authRoutes);
 
+const adminRoutes = require('./routes/admin');
+app.use('/api/admin', adminRoutes);
 // Root endpoint
+
 app.get('/', (req, res) => {
   res.send('DigiCore Backend is Running ✅');
 });

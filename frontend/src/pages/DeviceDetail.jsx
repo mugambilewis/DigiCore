@@ -36,8 +36,8 @@ const DeviceDetails = () => {
         
         </div>
       <div className="flex-1 text-center">
-          <h2 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
-  You have {item.quantity} {item.name}{item.quantity > 1 ? 's' : ''} in your cart
+          <h2 className="text-lg sm:text-xl font-semibold text-gray-950 mb-4">
+  You have <span className="italic sm:text-lg text-gray-500">{item.quantity} {item.name}{item.quantity > 1 ? 's' : ''} </span> in your cart
 </h2>
 
       </div>

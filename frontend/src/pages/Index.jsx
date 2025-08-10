@@ -2,18 +2,28 @@
 import Hero from '../components/Hero';
 import OurDevices from '../components/OurDevices';
 import LearnElectronics from '../components/LearnElectronics';
-import ExploreTools from '../components/ExploreTools';
 import WhyDigitalCore from '../components/WhyDigitalCore';
+import BrandCarousel from '../components/BrandCarousel';
+import OfferCard from '../components/OfferCard';
+
+import { SearchProvider, SearchModal } from '../context/SearchContext';
 
 const Index = () => {
   return (
+    <SearchProvider>
     <div className="min-h-screen bg-white">
-      <Hero />
-      <OurDevices />
-      <ExploreTools />
-      <LearnElectronics />
-      <WhyDigitalCore />
+      
+        <Hero />
+        <OfferCard />
+        <OurDevices />
+        <BrandCarousel />
+        
+        <LearnElectronics />
+        <WhyDigitalCore />
+         <SearchModal />
+     
     </div>
+     </SearchProvider>
   );
 };
 
