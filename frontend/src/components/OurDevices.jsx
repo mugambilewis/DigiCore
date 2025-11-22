@@ -122,7 +122,7 @@ const OurDevices = () => {
                 {/* Price */}
                 <div className="mb-4">
                   <span className="text-2xl font-bold text-blue-600">
-                    ${device.price.toLocaleString()}
+                    Ksh {device.price.toLocaleString()}
                   </span>
                 </div>
 

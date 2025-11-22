@@ -87,7 +87,7 @@ const DeviceDetails = () => {
               {/* Price */}
               <div className="bg-blue-50 inline-block self-start px-6 py-3 rounded-xl">
                 <span className="text-3xl font-bold text-blue-600">
-                  ${device.price.toLocaleString()}
+                  Ksh {device.price.toLocaleString()}
                 </span>
               </div>
 

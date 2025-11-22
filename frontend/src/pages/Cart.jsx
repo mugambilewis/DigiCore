@@ -58,12 +58,12 @@ const Cart = () => {
                           {item.name}
                         </h2>
                         <p className="text-sm text-gray-600">
-                          <span className="font-medium text-gray-900">${item.price.toLocaleString()}</span> × {item.quantity}
+                          <span className="font-medium text-gray-900">Ksh {item.price.toLocaleString()}</span> × {item.quantity}
                         </p>
                       </div>
                       <div className="text-right mr-4">
                         <p className="text-lg font-bold text-gray-900">
-                          ${(item.price * item.quantity).toLocaleString()}
+                          Ksh {(item.price * item.quantity).toLocaleString()}
                         </p>
                       </div>
                     </div>
@@ -84,7 +84,7 @@ const Cart = () => {
               <div className="flex justify-between items-center mb-6 pb-6 border-b border-gray-300">
                 <span className="text-lg font-medium text-gray-600">Total Amount</span>
                 <span className="text-3xl font-bold text-gray-900">
-                  ${totalPrice.toLocaleString()}
+                  Ksh {totalPrice.toLocaleString()}
                 </span>
               </div>
               
