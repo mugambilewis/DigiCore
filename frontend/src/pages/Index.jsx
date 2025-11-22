@@ -6,11 +6,10 @@ import WhyDigitalCore from '../components/WhyDigitalCore';
 import BrandCarousel from '../components/BrandCarousel';
 import OfferCard from '../components/OfferCard';
 
-import { SearchProvider, SearchModal } from '../context/SearchContext';
 
 const Index = () => {
   return (
-    <SearchProvider>
+   
     <div className="min-h-screen bg-white">
       
         <Hero />
@@ -20,10 +19,10 @@ const Index = () => {
         
         <LearnElectronics />
         <WhyDigitalCore />
-         <SearchModal />
+         
      
     </div>
-     </SearchProvider>
+    
   );
 };
 

@@ -5,8 +5,8 @@ import { Section } from 'lucide-react';
 const OfferCard = () => {
   return (
    
-    <div className="mt-20 relative min-h-[80vh] mx-12 sm:mx-20 md:mx-24 lg:mx-28 p-4 lg:p-6  overflow-hidden flex flex-col items-center justify-center">
-      <h2 className="text-4xl font-bold text-gray-900 mb-4">
+    <div className="mt-20 relative min-h-[80vh] mx-4 sm:mx-20 md:mx-24 lg:mx-28 p-4 lg:p-6  overflow-hidden flex flex-col items-center justify-center">
+      <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
             Exclusive Offer!
           </h2>
     <div className=" rounded-3xl flex items-center justify-center overflow-hidden p-4 lg:p-6 bg-gradient-to-br from-[hsl(220,30%,5%)] via-[hsl(240,20%,8%)] to-[hsl(260,25%,10%)]">
@@ -77,7 +77,7 @@ const OfferCard = () => {
           <div className="relative order-1 lg:order-2 flex justify-center">
             <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl">
               <img 
-                src="/public/images/Device on offer.png" 
+                src="/images/Device on offer.png" 
                 alt="Samsung Galaxy S24 Ultra" 
                 className="w-full h-auto object-contain transform hover:scale-105 transition-transform duration-500" 
               />

@@ -12,7 +12,7 @@ const Navigation = () => {
   const navigate = useNavigate();
 
   const totalItems = useSelector((state) => state.cart.totalItems);
-  const user = useSelector((state) => state.auth.user);
+  const user = useSelector((state) => state.user.user);
 
   const handleLogout = () => {
     setIsUserDropdownOpen(false);

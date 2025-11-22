@@ -71,9 +71,12 @@ const Cart = () => {
                 Total: ${totalPrice.toLocaleString()}
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
-                  Proceed to Checkout
-                </button>
+                <Link
+                to="/checkout"
+                className="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition text-center"
+              >
+                Proceed to Checkout
+              </Link>
                 <button
                   onClick={() => dispatch(clearCart())}
                   className="px-6 py-3 bg-red-500 text-white rounded-lg font-semibold hover:bg-red-700 transition"

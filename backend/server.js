@@ -1,8 +1,9 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const cors = require('cors'); // ✅ Declare ONLY ONCE
+const cors = require('cors');
 const cookieParser = require('cookie-parser');
+const path = require('path');
+const { pool } = require('./config/db');
 
 // Load environment variables
 dotenv.config();
@@ -15,9 +16,12 @@ app.use(cookieParser());
 
 // ✅ CORS config – required for frontend-backend communication with cookies
 app.use(cors({
-  origin: "http://localhost:5173", // Make sure this matches your frontend
+  origin: process.env.FRONTEND_URL || "http://localhost:5173",
   credentials: true
 }));
+
+// Serve receipt files
+app.use('/receipts', express.static(path.join(__dirname, 'receipts')));
 
 // Routes
 const authRoutes = require('./routes/auth');
@@ -25,20 +29,25 @@ app.use('/api/auth', authRoutes);
 
 const adminRoutes = require('./routes/admin');
 app.use('/api/admin', adminRoutes);
-// Root endpoint
 
+const orderRoutes = require('./routes/orderRoutes');
+app.use('/api/orders', orderRoutes);
+
+// Root endpoint
 app.get('/', (req, res) => {
   res.send('DigiCore Backend is Running ✅');
 });
 
-// Database and Server Initialization
-mongoose.connect(process.env.MONGO_URI)
+// Test database connection and start server
+pool.query('SELECT NOW()')
   .then(() => {
-    console.log('✅ MongoDB Connected');
-    app.listen(process.env.PORT, () => {
-      console.log(`🚀 Server running on http://localhost:${process.env.PORT}`);
+    console.log('✅ PostgreSQL (Supabase) Connected');
+    const PORT = process.env.PORT || 5000;
+    app.listen(PORT, () => {
+      console.log(`🚀 Server running on http://localhost:${PORT}`);
     });
   })
   .catch((err) => {
-    console.error('❌ MongoDB connection failed:', err);
+    console.error('❌ PostgreSQL connection failed:', err);
+    process.exit(1);
   });

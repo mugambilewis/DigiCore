@@ -40,7 +40,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-4">
         {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Logo and Description */}
@@ -116,27 +116,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-50">
-        <div className="grid grid-cols-4 py-2">
-          <button className="flex flex-col items-center py-2 text-gray-600 hover:text-blue-600 transition-colors">
-            <Search className="w-6 h-6 mb-1" />
-            <span className="text-xs">Search</span>
-          </button>
-          <button className="flex flex-col items-center py-2 text-gray-600 hover:text-blue-600 transition-colors">
-            <Book className="w-6 h-6 mb-1" />
-            <span className="text-xs">Learn</span>
-          </button>
-          <button className="flex flex-col items-center py-2 text-gray-600 hover:text-blue-600 transition-colors">
-            <ShoppingCart className="w-6 h-6 mb-1" />
-            <span className="text-xs">Cart</span>
-          </button>
-          <button className="flex flex-col items-center py-2 text-gray-600 hover:text-blue-600 transition-colors">
-            <User className="w-6 h-6 mb-1" />
-            <span className="text-xs">Account</span>
-          </button>
-        </div>
-      </div>
+      
     </footer>
   );
 };

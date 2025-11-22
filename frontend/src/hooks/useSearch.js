@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+/*import { useContext } from 'react';
 import { SearchContext } from '../context/SearchContext';
 
 export const useSearch = () => {
@@ -7,4 +7,4 @@ export const useSearch = () => {
     throw new Error('useSearch must be used within a SearchProvider');
   }
   return context;
-};
+};*/

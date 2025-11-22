@@ -46,7 +46,7 @@ const WhyDigitalCore = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Column - Benefits */}
           <div className="space-y-8">
-            {benefits.map((benefit, index) => (
+            {benefits.map((benefit) => (
               <div key={benefit.title} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="flex-shrink-0">
                   {benefit.icon}
@@ -60,10 +60,10 @@ const WhyDigitalCore = () => {
           </div>
 
           {/* Right Column - Features List */}
-          <div className="bg-white rounded-2xl p-8 shadow-xl">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">What You Get</h3>
-            <div className="space-y-4">
-              {features.map((feature, index) => (
+          <div className = "bg-white rounded-2xl p-8 shadow-xl">
+            <h3 className = "text-2xl font-bold text-gray-900 mb-6">What You Get</h3>
+            <div className = "space-y-4">
+              {features.map((feature) => (
                 <div key={feature} className="flex items-center gap-4">
                   <div className="flex-shrink-0">
                     <Check className="w-6 h-6 text-green-500" />

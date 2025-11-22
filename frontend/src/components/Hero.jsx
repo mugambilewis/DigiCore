@@ -25,7 +25,7 @@ const Hero = () => {
               <a
                 key={section}
                 href={`#${section}`}
-                className=" hover:text-blue-600 capitalize bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:border-blue-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                className=" hover:text-blue-600 capitalize bg-blue-600 text-white px-4 md:px-8 py-4 rounded-lg font-semibold hover:bg-white hover:border-blue-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Shop {section}
               
@@ -37,7 +37,7 @@ const Hero = () => {
               <a
                 key={section}
                 href={`#${section}`}
-                className="text-white hover:text-blue-600  capitalize bg-blue-600  px-8 py-4 rounded-lg font-semibold hover:bg-blue-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                className="text-white hover:text-blue-600  capitalize bg-blue-600 px-4 md:px-8 py-4 rounded-lg font-semibold hover:bg-white hover:border-1 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 {section} Electronics
               
