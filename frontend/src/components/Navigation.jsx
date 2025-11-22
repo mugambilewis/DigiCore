@@ -39,7 +39,7 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {['home', 'devices', 'learn', 'kits', 'about'].map((section) => (
+            {['home', 'devices', 'learn', 'about'].map((section) => (
               <a
                 key={section}
                 href={`#${section}`}
